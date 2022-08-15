@@ -2,7 +2,7 @@ function dnrg = video_differentialEnergy(videofile)
 % Function calculates the difference between voxels between adjacent frames
 % Estimate of "movement/change" of image
 %
-% Severi Snatavirta & Juha Lahnakoski
+% Severi Santavirta & Juha Lahnakoski
 
 vidIn = VideoReader(videofile);
 

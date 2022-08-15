@@ -1,12 +1,10 @@
-function [nrg,images,transform,masked_transform,filtered] = video_spatialEnergy(videofile,lowpass,radius)
-% Function calculated the Fourier transform for each frame of the video. A
-% mask is used to filter unwanted frequecies, circular low-pass or high-pass
-% filters can be used. Spatial energy is then calculated as mean of the
+function [nrg,images,transform,masked_transform,filtered] = video_spatialEnergy(videofile,radius)
+% Function calculated the Fourier transform for each frame of the video and a
+% mask is used to filter unwanted frequecies. Spatial energy is then calculated as the mean of the
 % Fourier filtered images.
 %
 % INPUT
 %           videofile           = myFile.mp4
-%           lowpass             = 1 (filter out high frequencies), 0 (filter out low frequencies)
 %           radius              = radius of the circular frequency mask as
 %                                 percentage of the image height (radius/100*image.Height is the radius of the mask)
 %

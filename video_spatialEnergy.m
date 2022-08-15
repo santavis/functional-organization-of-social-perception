@@ -25,13 +25,8 @@ v = VideoReader(videofile);
 [Y,X]=ndgrid(1:v.Height,1:v.Width);
 
 rad = radius/100*v.Height;
-if(lowpass)
-    % High-pass filter (used as low-pass filter)
-    fftmask=max((Y.^2+X.^2<rad^2),max((flipud(Y).^2+X.^2<rad^2),max((Y.^2+fliplr(X).^2<rad^2),(flipud(Y).^2+fliplr(X).^2<rad^2))));
-else
-    % Low-pass filter (used as high-pass filter)
-    fftmask = createCirclesMask(size(Y),[size(Y,2)/2 size(Y,1)/2],rad);
-end
+
+fftmask=max((Y.^2+X.^2<rad^2),max((flipud(Y).^2+X.^2<rad^2),max((Y.^2+fliplr(X).^2<rad^2),(flipud(Y).^2+fliplr(X).^2<rad^2))));
 
 nrg = zeros(v.NumFrames,1); % Spatial energy
 images = zeros(v.Height,v.Width,3,v.NumFrames); % Save original images as double (uint8(images(:,:,:,fr)) for plotting);

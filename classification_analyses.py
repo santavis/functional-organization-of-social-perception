@@ -1,4 +1,4 @@
-# Classification analysis of social perceptual features based on fMRI reponses to aduiovisual perception of these features
+# Classification analysis of social perceptual features based on fMRI responses to audiovisual perception of these features
 #
 # Sections:
 #   1. Make dataset for full brain classification analysis

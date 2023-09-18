@@ -1,7 +1,7 @@
 This repository contains scripts used for analyzing the fMRI data in the article:
 
 "Functional organization of social perception in the human brain" 
-https://doi.org/10.1101/2021.12.17.473175
+https://doi.org/10.1016/j.neuroimage.2023.120025
 
 Consensus clustering anlaysis was performed to limit the social perceptual space
 into a limited number of social dimensions

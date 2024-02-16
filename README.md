@@ -1,3 +1,4 @@
+# Functional organization of social perception networks in the human brain
 This repository contains scripts used for analyzing the fMRI data in the article:
 
 "Functional organization of social perception in the human brain" 
